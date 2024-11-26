@@ -57,4 +57,33 @@ Details
 
 # This is about Task 1.
 --- 
-    
+
+
+# Task 2 
+---
+## swapping two number
+
+![image](https://github.com/user-attachments/assets/a8f72fea-deb1-4683-bc35-ef895aa05ecd)
+
+--- 
+Result using spice simulator
+![image](https://github.com/user-attachments/assets/9db18649-2d0a-4099-9c97-1e22567c62a0)
+
+---
+
+Here is a snapshot of the objdump, assembly code for O1, and Ofast profiles respectively:
+
+O1 assembly code:
+![image](https://github.com/user-attachments/assets/811cdca3-4cd7-46cb-958b-ffdbf8195036)
+
+---
+Ofast assembly code:
+
+![image](https://github.com/user-attachments/assets/794df8f0-f596-405a-b2f2-efa999081ef6)
+
+## Task 2 end
+--- 
+
+
+
+  
