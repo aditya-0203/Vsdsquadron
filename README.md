@@ -221,7 +221,7 @@ J-type Instructions
 
  ## The unique RISC-V instructions between the addresses 10184 to 10204
 
-![Uploading 389969724-794df8f0-f596-405a-b2f2-efa999081ef6.png…]()
+![image](https://github.com/user-attachments/assets/811cdca3-4cd7-46cb-958b-ffdbf8195036)
 
 addi - Add immediate.
 
