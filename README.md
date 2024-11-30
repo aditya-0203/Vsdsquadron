@@ -221,6 +221,8 @@ J-type Instructions
 
  ## The unique RISC-V instructions between the addresses 10184 to 10204
 
+![Uploading 389969724-794df8f0-f596-405a-b2f2-efa999081ef6.png…]()
+
 addi - Add immediate.
 
     Example: addi sp, sp, -32 (adjusts the stack pointer).
