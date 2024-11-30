@@ -85,5 +85,174 @@ Ofast assembly code:
 --- 
 
 
+# Task 3 
+---
+# what is RISC-V
 
-  
+  It is an open standard instruction set architecture (ISA) based on established reduced instruction set computer (RISC) principles.
+
+  Base Instruction Formats
+
+  ![image](https://github.com/user-attachments/assets/7c7d53f2-c2fc-47f4-aad3-1f2467df30d3)
+
+
+
+  R-type Instructions
+
+    Used for register-register operations, such as addition, subtraction, and bitwise logic operations.
+
+    o funct7 (31-25): Used to specify additional operation details or variants.
+    o rs2 (24-20): The second source register.
+    o rs1 (19-15): The first source register.  
+    o funct3 (14-12): Specifies the type of operation (e.g., add, sub, OR).
+    o rd (11-7): The Rd register is also called the destination register, and the destination register is the register used to store the result
+    o opcode (6-0): Identifies the operation class (e.g., arithmetic, logic).
+
+
+  I-type Instructions
+
+    Used for immediate data manipulation, load instructions, and other operations involving immediate values.
+
+    o imm[11:0] (31-20): 12-bit immediate value (sign-extended).
+    o rs1 (19-15): Source register.
+    o funct3 (14-12): Operation type specifier.
+    o rd (11-7): Destination register.
+    o opcode (6-0): Operation class identifier
+
+S-type Instructions
+
+    Used for store operations to memory.
+
+    o imm[11:5] (31-25): Upper 7 bits of the 12-bit immediate value.
+    o rs2 (24-20): Source register for the data to be stored.
+    o rs1 (19-15): Source register specifying the base address.
+    o funct3 (14-12): Operation type specifier.
+    o imm[4:0] (11-7): Lower 5 bits of the 12-bit immediate value.
+    o opcode (6-0): Operation class identifier.
+
+B-type Instructions
+
+    Used for conditional branch operations.
+
+    o imm[12] (31): Most significant bit of the immediate value (sign bit).
+    o imm[10:5] (30-25): Upper 6 bits of the immediate value.
+    o rs2 (24-20): Second source register.
+    o rs1 (19-15): First source register.
+    o funct3 (14-12): Specifies the branch condition (e.g., equal, not equal).
+    o imm[4:1] (11-8): Bits [4:1] of the immediate value.
+    o imm[11] (7): Bit 11 of the immediate value.
+    o opcode (6-0): Operation class identifier.
+
+U-type Instructions
+
+    Used for upper immediate instructions, such as loading upper 20 bits into a register.
+
+    o imm[31:12] (31-12): 20-bit immediate value (upper bits).
+    o rd (11-7): Destination register.
+    o opcode (6-0): Operation class identifier.
+
+    This image illustrates the instruction format for a RISC-V Instruction Set Architecture (ISA). RISC-V supports six primary instruction formats: R-type, I-type, S-type, B-type, U-type, and J-type. Each format specifies the arrangement of fields in a 32-bit instruction word. Here's a detailed explanation of each format:
+R-type Instructions
+
+Used for register-register operations, such as addition, subtraction, and bitwise logic operations.
+
+    funct7 (31-25): Used to specify additional operation details or variants.
+    rs2 (24-20): The second source register.
+    rs1 (19-15): The first source register.
+    funct3 (14-12): Specifies the type of operation (e.g., add, sub, OR).
+    rd (11-7): Destination register where the result is stored.
+    opcode (6-0): Identifies the operation class (e.g., arithmetic, logic).
+
+I-type Instructions
+
+Used for immediate data manipulation, load instructions, and other operations involving immediate values.
+
+    imm[11:0] (31-20): 12-bit immediate value (sign-extended).
+    rs1 (19-15): Source register.
+    funct3 (14-12): Operation type specifier.
+    rd (11-7): Destination register.
+    opcode (6-0): Operation class identifier.
+
+S-type Instructions
+
+Used for store operations to memory.
+
+    imm[11:5] (31-25): Upper 7 bits of the 12-bit immediate value.
+    rs2 (24-20): Source register for the data to be stored.
+    rs1 (19-15): Source register specifying the base address.
+    funct3 (14-12): Operation type specifier.
+    imm[4:0] (11-7): Lower 5 bits of the 12-bit immediate value.
+    opcode (6-0): Operation class identifier.
+
+B-type Instructions
+
+Used for conditional branch operations.
+
+    imm[12] (31): Most significant bit of the immediate value (sign bit).
+    imm[10:5] (30-25): Upper 6 bits of the immediate value.
+    rs2 (24-20): Second source register.
+    rs1 (19-15): First source register.
+    funct3 (14-12): Specifies the branch condition (e.g., equal, not equal).
+    imm[4:1] (11-8): Bits [4:1] of the immediate value.
+    imm[11] (7): Bit 11 of the immediate value.
+    opcode (6-0): Operation class identifier.
+
+U-type Instructions
+
+    Used for upper immediate instructions, such as loading upper 20 bits into a register.
+
+    o imm[31:12] (31-12): 20-bit immediate value (upper bits).
+    o rd (11-7): Destination register.
+    o opcode (6-0): Operation class identifier.
+
+J-type Instructions
+
+    Used for jump instructions.
+
+    o imm[20] (31): Most significant bit of the 21-bit immediate value (sign bit).
+    o imm[10:1] (30-21): Bits [10:1] of the immediate value.
+    o imm[11] (20): Bit 11 of the immediate value.
+    o imm[19:12] (19-12): Bits [19:12] of the immediate value.
+    o rd (11-7): Destination register.
+    o opcode (6-0): Operation class identifier.
+
+
+---
+
+ ## The unique RISC-V instructions between the addresses 10184 to 10204
+
+addi - Add immediate.
+
+    Example: addi sp, sp, -32 (adjusts the stack pointer).
+
+sd - Store double word.
+
+    Example: sd ra, 24(sp) (stores the return address on the stack).
+
+lui - Load upper immediate.
+
+    Example: lui a0, 0x2b (loads the upper 20 bits of a value into a0).
+
+jal - Jump and link.
+
+    Example: jal ra, 10460 <printf> (calls the printf function and stores the return address in ra).
+
+ld - Load double word.
+
+    Example: ld ra, 24(sp) (loads the return address from the stack).
+
+li - Load immediate (pseudo-instruction).
+
+    Example: li a0, 0 (loads the value 0 into a0).
+
+lw - Load word.
+
+    Example: lw a1, 12(sp) (loads a word from the stack into a1).
+
+sw - Store word.
+
+    Example: sw a1, 12(sp) (stores a word from a1 onto the stack).
+
+ret - Return from subroutine (pseudo-instruction).
+
+    Example: ret (returns control to the caller).
