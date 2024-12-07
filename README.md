@@ -269,12 +269,11 @@ cloned the repository and downloaded the netlist files for simulation.
 
 ![image](https://github.com/user-attachments/assets/8bd0eaa1-08e2-40ca-923a-63acef4ef149)
 
- following commands in your terminal.
-  
+used below commands  
      iverilog -o iiitb_rv32i iiitb_rv32i.v iiitb_rv32i_tb.v
     ./iiitb_rv32i
 
-To see the output waveform in gtkwave, enter the following commands in your terminal.
+To see the output waveform in gtkwave, we need to  enter the following commands  into terminal.
 
     gtkwave iiitb_rv32i.vcd
 
