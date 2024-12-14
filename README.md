@@ -1,4 +1,4 @@
-# VSDSquadron-Mini-Internship
+![image](https://github.com/user-attachments/assets/bd566b43-0cf3-4ebe-9c20-12c787f058e8)# VSDSquadron-Mini-Internship
 ---
 
 Details 
@@ -288,3 +288,87 @@ To see the output waveform in gtkwave, we need to  enter the following commands 
 
 End Task 4 
 ---
+
+
+# Task 5 
+---
+
+## Project Name: Binary to Gray Code Converter using VSDSquadron Mini Board 
+---
+
+![image](https://github.com/user-attachments/assets/4adda11a-e2e6-4df9-b80c-1fb1cb3595fd)
+
+## Overview:
+This project implements a Binary to Gray Code Converter using the VSDSquadron Mini board. The input is provided through four on/off switches representing a 4-bit binary input, and the output is displayed using four LEDs to show the corresponding Gray Code.
+
+The project demonstrates basic digital logic operations using a microcontroller, switches, and LEDs.
+---
+## Components Required:
+
+VSDSquadron Mini Board
+
+4 SPST On/Off Switches
+
+4 LEDs (any color)
+
+4 Resistors (220Ω for current limiting)
+
+Breadboard
+
+Jumper wires
+
+Power supply (USB cable for the VSDSquadron board)
+
+---
+
+Circuit Connections:
+
+Switches (Input):
+
+The four switches are used to input a 4-bit binary value.
+
+Connect one terminal of each switch to the following pins on the VSDSquadron Mini board:
+
+Switch 1: PD1
+
+Switch 2: PD2
+
+Switch 3: PD3
+
+Switch 4: PD4
+
+The other terminal of each switch is connected to 5V (pull-up logic).
+
+LEDs (Output):
+
+The four LEDs display the Gray Code output.
+
+Connect the cathode (short leg) of each LED to GND via 220Ω resistors.
+
+Connect the anode (long leg) of the LEDs to the following pins on the VSDSquadron Mini board:
+
+LED 1: PC0
+
+LED 2: PC1
+
+LED 3: PC2
+
+LED 4: PC3
+
+Power:
+
+Connect the VSDSquadron board to the breadboard using jumper wires.
+
+5V and GND pins from the board are used to power the switches and LEDs
+
+---
+![image](https://github.com/user-attachments/assets/845b9ce7-bc18-4d30-8399-a36400a24e09)
+
+---
+Diagram Representation:
+
+The circuit diagram shown in the first image matches the description
+
+Switches are correctly wired to pins PD1 to PD4 with a common power (5V).
+
+LEDs are connected to pins PD4 to PD7 with resistors to GND.
