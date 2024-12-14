@@ -298,9 +298,10 @@ End Task 4
 ![image](https://github.com/user-attachments/assets/4adda11a-e2e6-4df9-b80c-1fb1cb3595fd)
 
 ## Overview:
-This project implements a Binary to Gray Code Converter using the VSDSquadron Mini board. The input is provided through four on/off switches representing a 4-bit binary input, and the output is displayed using four LEDs to show the corresponding Gray Code.
 
+This project implements a Binary to Gray Code Converter using the VSDSquadron Mini board. The input is provided through four on/off switches representing a 4-bit binary input, and the output is displayed using four LEDs to show the corresponding Gray Code.
 The project demonstrates basic digital logic operations using a microcontroller, switches, and LEDs.
+
 ---
 ## Components Required:
 
@@ -361,7 +362,6 @@ Connect the VSDSquadron board to the breadboard using jumper wires.
 5V and GND pins from the board are used to power the switches and LEDs
 
 ---
-![image](https://github.com/user-attachments/assets/845b9ce7-bc18-4d30-8399-a36400a24e09)
 
 ---
 Diagram Representation:
@@ -370,4 +370,4 @@ The circuit diagram shown in the first image matches the description
 
 Switches are correctly wired to pins PD1 to PD4 with a common power (5V).
 
-LEDs are connected to pins PD4 to PD7 with resistors to GND.
+LEDs are connected to pins PC0 to PC3 with resistors to GND.
