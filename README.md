@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/bd566b43-0cf3-4ebe-9c20-12c787f058e8)# VSDSquadron-Mini-Internship
 ---
 
 Details 
