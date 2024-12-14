@@ -295,7 +295,8 @@ End Task 4
 ## Project Name: Binary to Gray Code Converter using VSDSquadron Mini Board 
 ---
 
-![image](https://github.com/user-attachments/assets/4adda11a-e2e6-4df9-b80c-1fb1cb3595fd)
+![image](https://github.com/user-attachments/assets/32657922-40bf-438c-aa5f-1a2b67c943ae)
+
 
 ## Overview:
 
