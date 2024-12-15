@@ -301,10 +301,12 @@ End Task 4
 The project aims to create a fire detection system using a  IR flame detector sensor and the VSDsquadron Mini Board. When fire is detected by the IR flame detector sensor, the system activates an on board LED to indicate the presence of fire .
 ---
 ## Components
+---
 
 IR flame detector
 VSDSquadron Mini Board
-Jumper wire(Female to FEmale)
+Jumper wire(Female to Female)
+
 ---
 
 Detection : The IR flame detector sensor continuously monitors its surroundings for any heat . When it detects heat above certain temperature, it sends a signal to the VSDsquadron Mini Board.
