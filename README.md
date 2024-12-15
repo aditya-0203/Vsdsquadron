@@ -299,12 +299,13 @@ End Task 4
 ## Overview
 
 The project aims to create a fire detection system using a  IR flame detector sensor and the VSDsquadron Mini Board. When fire is detected by the IR flame detector sensor, the system activates an on board LED to indicate the presence of fire .
-
-Components
+---
+## Components
 
 IR flame detector
 VSDSquadron Mini Board
 Jumper wire(Female to FEmale)
+---
 
 Detection : The IR flame detector sensor continuously monitors its surroundings for any heat . When it detects heat above certain temperature, it sends a signal to the VSDsquadron Mini Board.
 
@@ -312,7 +313,9 @@ Processing : The VSDsquadron Mini Board receives the signal from the IR flame de
 
 LED Activation : Upon detecting fire , the microcontroller activates the LED which is mounted on it , illuminating it to indicate the presence of fire.
 
-Hardware Connections
+---
+
+# Hardware Connections
 
 IR flame detector CONNECTIONS
 
@@ -321,6 +324,7 @@ VCC Of  IR flame detector sensor connected to 5V Of VSDSquadron Mini Board.
 GND Pin of IR flame detector sensor connected to GND Of VSDSquadron Mini Board.
 LED is inbuilt which PD6 pin.
 
+---
 #  video 
 
 https://github.com/user-attachments/assets/3825bafe-27ff-4c9b-b8d8-1577d0584187
