@@ -292,83 +292,36 @@ End Task 4
 # Task 5 
 ---
 
-## Project Name: Binary to Gray Code Converter using VSDSquadron Mini Board 
----
+## Project Name: Fire detection system
 
-![image](https://github.com/user-attachments/assets/32657922-40bf-438c-aa5f-1a2b67c943ae)
+![image](https://github.com/user-attachments/assets/acb27297-643b-4478-abed-6701bd4ea56b)
 
+## Overview
 
-## Overview:
+The project aims to create a fire detection system using a  IR flame detector sensor and the VSDsquadron Mini Board. When fire is detected by the IR flame detector sensor, the system activates an on board LED to indicate the presence of fire .
 
-This project implements a Binary to Gray Code Converter using the VSDSquadron Mini board. The input is provided through four on/off switches representing a 4-bit binary input, and the output is displayed using four LEDs to show the corresponding Gray Code.
-The project demonstrates basic digital logic operations using a microcontroller, switches, and LEDs.
+Components
 
----
-## Components Required:
-
+IR flame detector
 VSDSquadron Mini Board
+Jumper wire(Female to FEmale)
 
-4 SPST On/Off Switches
+Detection : The IR flame detector sensor continuously monitors its surroundings for any heat . When it detects heat above certain temperature, it sends a signal to the VSDsquadron Mini Board.
 
-4 LEDs (any color)
+Processing : The VSDsquadron Mini Board receives the signal from the IR flame detector sensor and processes it using its onboard microcontroller.
 
-4 Resistors (220Ω for current limiting)
+LED Activation : Upon detecting fire , the microcontroller activates the LED which is mounted on it , illuminating it to indicate the presence of fire.
 
-Breadboard
+Hardware Connections
 
-Jumper wires
+IR flame detector CONNECTIONS
 
-Power supply (USB cable for the VSDSquadron board)
+Output Pin of IR flame detector connected to PD5 Of VSDSquadron Mini Board.
+VCC Of  IR flame detector sensor connected to 5V Of VSDSquadron Mini Board.
+GND Pin of IR flame detector sensor connected to GND Of VSDSquadron Mini Board.
+LED is inbuilt which PD6 pin.
 
----
+#  video 
 
-Circuit Connections:
+https://github.com/user-attachments/assets/3825bafe-27ff-4c9b-b8d8-1577d0584187
 
-Switches (Input):
-
-The four switches are used to input a 4-bit binary value.
-
-Connect one terminal of each switch to the following pins on the VSDSquadron Mini board:
-
-Switch 1: PD1
-
-Switch 2: PD2
-
-Switch 3: PD3
-
-Switch 4: PD4
-
-The other terminal of each switch is connected to 5V (pull-up logic).
-
-LEDs (Output):
-
-The four LEDs display the Gray Code output.
-
-Connect the cathode (short leg) of each LED to GND via 220Ω resistors.
-
-Connect the anode (long leg) of the LEDs to the following pins on the VSDSquadron Mini board:
-
-LED 1: PC0
-
-LED 2: PC1
-
-LED 3: PC2
-
-LED 4: PC3
-
-Power:
-
-Connect the VSDSquadron board to the breadboard using jumper wires.
-
-5V and GND pins from the board are used to power the switches and LEDs
-
----
-
----
-Diagram Representation:
-
-The circuit diagram shown in the first image matches the description
-
-Switches are correctly wired to pins PD1 to PD4 with a common power (5V).
-
-LEDs are connected to pins PC0 to PC3 with resistors to GND.
