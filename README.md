@@ -303,8 +303,8 @@ The project aims to create a fire detection system using a  IR flame detector se
 ## Components
 ---
 
-IR flame detector
-VSDSquadron Mini Board
+IR flame detector , 
+VSDSquadron Mini Board , 
 Jumper wire(Female to Female)
 
 ---
